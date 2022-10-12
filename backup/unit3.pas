@@ -47,7 +47,7 @@ begin
      if (CheckBox1.Checked = false) then y1:= '0';
      if (CheckBox1.Checked = true) then y1:='1';
 
-     ini := TIniFile.Create('data\settings.ini');
+     ini := TIniFile.Create('settings.ini');
      try
 
       ini.WriteString('BATCleaner', 'y1', y1);
@@ -62,7 +62,7 @@ end;
 procedure TForm3.FormActivate(Sender: TObject);
 
 begin
-   ini := TIniFile.Create('data\settings.ini');
+   ini := TIniFile.Create('settings.ini');
     try
 
       y1 := ini.ReadString('BATCleaner', 'y1', y1);

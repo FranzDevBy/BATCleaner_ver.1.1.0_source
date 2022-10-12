@@ -135,7 +135,7 @@ s:='echo Vypolnyaetsya procedura ochistki ot nenuzhnyh vremennyh fajlov....';
 //подождите, выполняется процедура очистки от ненужных временных файлов
 Writeln(f, s);
 //s:='>logfile.log 2>&1 Call :Kuku';
-s:='>logfile_%date:~0,2%.%date:~3,2%.%date:~6,4%_%time:~0,2%.%time:~3,2%.%time:~6,2%.log 2>&1 Call :Kuku';
+s:='>logfile_%date%.log 2>&1 Call :Kuku';
 Writeln(f, s);
 s:='GoTo :Eof';
 Writeln(f, s);
