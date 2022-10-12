@@ -1,0 +1,42 @@
+object Form3: TForm3
+  Left = 490
+  Height = 117
+  Top = 319
+  Width = 398
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Параметры'
+  ClientHeight = 117
+  ClientWidth = 398
+  OnActivate = FormActivate
+  Position = poMainFormCenter
+  LCLVersion = '2.2.0.4'
+  object ButtonOk: TButton
+    Left = 317
+    Height = 25
+    Top = 80
+    Width = 75
+    Caption = 'Ок'
+    OnClick = ButtonOkClick
+    TabOrder = 0
+  end
+  object GroupBox1: TGroupBox
+    Left = 8
+    Height = 57
+    Top = 8
+    Width = 384
+    Caption = 'Общие'
+    ClientHeight = 39
+    ClientWidth = 380
+    TabOrder = 1
+    object CheckBox1: TCheckBox
+      Left = 8
+      Height = 17
+      Top = 8
+      Width = 359
+      Caption = 'Перенаправлять стандартный вывод пакетного файла в log-файл'
+      OnChange = CheckBox1Change
+      TabOrder = 0
+    end
+  end
+end
